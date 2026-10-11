@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="خدمتي - واجهة تجريبية للبحث عن فرص العمل في الجزائر">
+  <title>خدمتي | فرص العمل في الجزائر</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#" aria-label="خدمتي - الصفحة الرئيسية">
+        <span class="brand-icon">خ</span>
+        <span>خدمتي<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#home">الرئيسية</a>
+        <a href="#jobs">عروض العمل</a>
+        <a href="#about">عن المشروع</a>
+      </nav>
+
+      <a class="header-button" href="#jobs">اكتشف الوظائف</a>
+    </div>
+  </header>
+
+  <main>
+    
+<section class="sources-section" id="sources">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">مصادر خارجية</span>
+        <h2>اكتشف عروض العمل الأصلية</h2>
+        <p>
+          تصفح فرص العمل لدى مواقع التوظيف والشركات مباشرة.
+        </p>
+      </div>
+    </div>
+
+    <div class="sources-grid">
+      <article class="source-card">
+        <div class="source-icon">E</div>
+        <h3>Emploitic</h3>
+        <p>عروض عمل من مؤسسات وقطاعات مختلفة في الجزائر.</p>
+        <a href="https://emploitic.com/"
+           target="_blank" rel="noopener noreferrer">
+          تصفح العروض ←
+        </a>
+      </article>
+
+      <article class="source-card">
+        <div class="source-icon">in</div>
+        <h3>LinkedIn Jobs</h3>
+        <p>فرص التوظيف والتدريب لدى الشركات في الجزائر.</p>
+        <a href="https://dz.linkedin.com/jobs/search"
+           target="_blank" rel="noopener noreferrer">
+          تصفح العروض ←
+        </a>
+      </article>
+
+      <article class="source-card">
+        <div class="source-icon">B</div>
+        <h3>Bayt.com</h3>
+        <p>ابحث عن الوظائف المنشورة في السوق الجزائري.</p>
+        <a href="https://www.bayt.com/en/algeria/jobs/"
+           target="_blank" rel="noopener noreferrer">
+          تصفح العروض ←
+        </a>
+      </article>
+
+      <article class="source-card">
+        <div class="source-icon">D</div>
+        <h3>Djezzy Carrière</h3>
+        <p>تعرف على المسارات المهنية والتدريب لدى الشركة.</p>
+        <a href="https://www.djezzy.dz/carriere"
+           target="_blank" rel="noopener noreferrer">
+          زيارة صفحة التوظيف ←
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="eyebrow">منصتك للفرص المهنية في الجزائر</span>
+          <h1>خطوتك الأولى نحو <span>مستقبلك المهني</span></h1>
+          <p>
+            ابحث عن فرص العمل والتربصات حسب ولايتك وتخصصك،
+            واكتشف الفرص المناسبة لمؤهلاتك.
+          </p>
+          <a class="primary-button" href="#jobs">ابحث عن عمل الآن ←</a>
+
+          <div class="hero-points">
+            <span>✓ بحث سهل</span>
+            <span>✓ تخصصات متنوعة</span>
+            <span>✓ واجهة مجانية</span>
+          </div>
+        </div>
+
+        <div class="hero-illustration" aria-hidden="true">
+          <div class="illustration-circle">
+            <div class="briefcase">💼</div>
+            <div class="floating-card card-top">🎯 هدفك يبدأ هنا</div>
+            <div class="floating-card card-bottom">📄 فرصتك القادمة</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-section" aria-label="البحث عن عمل">
+      <div class="container">
+        <form class="search-panel" id="searchForm">
+          <div class="field">
+            <label for="keyword">المهنة أو التخصص</label>
+            <input
+              id="keyword"
+              type="search"
+              placeholder="مثال: مهندس كهرباء"
+              autocomplete="off"
+            >
+          </div>
+
+          <div class="field">
+            <label for="wilaya">الولاية</label>
+            <select id="wilaya">
+              <option value="">كل الولايات</option>
+              <option value="خنشلة">خنشلة</option>
+              <option value="باتنة">باتنة</option>
+              <option value="قسنطينة">قسنطينة</option>
+              <option value="الجزائر">الجزائر</option>
+              <option value="ورقلة">ورقلة</option>
+              <option value="سطيف">سطيف</option>
+              <option value="عنابة">عنابة</option>
+              <option value="إليزي">إليزي</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="category">مجال العمل</label>
+            <select id="category">
+              <option value="">كل المجالات</option>
+              <option value="كهرباء">الكهرباء والطاقة</option>
+              <option value="معلوماتية">المعلوماتية</option>
+              <option value="صيانة">الصيانة الصناعية</option>
+              <option value="إدارة">الإدارة والمحاسبة</option>
+              <option value="صحة">الصحة</option>
+              <option value="تجارة">التجارة</option>
+            </select>
+          </div>
+
+          <button class="search-button" type="submit">
+            <span aria-hidden="true">⌕</span> بحث
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="jobs-section" id="jobs">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">اكتشف الفرص</span>
+            <h2>أحدث عروض العمل</h2>
+            <p>ابحث عن الفرصة التي تناسب مهاراتك ومؤهلاتك.</p>
+          </div>
+          <span class="results-count" id="resultsCount" aria-live="polite">
+            8 عروض تجريبية
+          </span>
+        </div>
+
+        <div class="demo-notice">
+          <span aria-hidden="true">ⓘ</span>
+          هذه بيانات تجريبية لتطوير الموقع وليست إعلانات توظيف حقيقية.
+        </div>
+
+        <div class="jobs-grid" id="jobsGrid">
+          <!-- ينشئ JavaScript بطاقات الوظائف هنا -->
+        </div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <div class="empty-icon">🔎</div>
+          <h3>لم نعثر على نتائج</h3>
+          <p>جرّب تغيير الولاية أو التخصص الذي تبحث عنه.</p>
+          <button type="button" class="secondary-button" id="resetButton">
+            عرض كل العروض
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-content">
+        <div class="about-icon">🤝</div>
+        <div>
+          <h2>فرص أقرب إليك</h2>
+          <p>
+            خدمتي مشروع يهدف إلى تسهيل الوصول إلى فرص العمل
+            وربط الباحثين عن عمل بالمؤسسات في مختلف ولايات الجزائر.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-icon">خ</span>
+        <span>خدمتي<span class="brand-dot">.</span></span>
+      </a>
+      <p>مشروع أولي لخدمة الباحثين عن عمل في الجزائر.</p>
+      <p>© <span id="currentYear"></span> خدمتي</p>
+    </div>
+  </footer>
+
+  <dialog id="jobDialog" class="job-dialog">
+    <div class="dialog-content">
+      <button
+        class="dialog-close"
+        id="closeDialog"
+        type="button"
+        aria-label="إغلاق"
+      >×</button>
+      <div id="dialogBody"></div>
+    </div>
+  </dialog>
+
+</body>
+</html>
